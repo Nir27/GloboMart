@@ -1,0 +1,22 @@
+<!-- Product Add Component Template -->
+<h2>Add Product</h2>
+<!-- Form for adding a new product -->
+<form (ngSubmit)="addProduct()">
+  <div>
+    <label>Name:</label>
+    <!-- Input field for product name -->
+    <input type="text" [(ngModel)]="newProduct.name" name="name" required>
+  </div>
+  <div>
+    <label>Price:</label>
+    <!-- Input field for product price -->
+    <input type="number" [(ngModel)]="newProduct.price" name="price" required>
+  </div>
+  <div>
+    <label>Category:</label>
+    <!-- Input field for product category -->
+    <input type="text" [(ngModel)]="newProduct.category" name="category">
+  </div>
+  <!-- Button to submit the form -->
+  <button type="submit">Add Product</button>
+</form>

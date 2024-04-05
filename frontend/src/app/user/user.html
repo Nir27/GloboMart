@@ -1,0 +1,22 @@
+<!-- User Add Component Template -->
+<h2>Register User</h2>
+<!-- Form for registering a new user -->
+<form (ngSubmit)="addUser()">
+  <div>
+    <label>Username:</label>
+    <!-- Input field for username -->
+    <input type="text" [(ngModel)]="newUser.username" name="username" required>
+  </div>
+  <div>
+    <label>Password:</label>
+    <!-- Input field for password -->
+    <input type="password" [(ngModel)]="newUser.password" name="password" required>
+  </div>
+  <div>
+    <label>Email:</label>
+    <!-- Input field for email -->
+    <input type="email" [(ngModel)]="newUser.email" name="email" required>
+  </div>
+  <!-- Button to submit the form -->
+  <button type="submit">Register</button>
+</form>
